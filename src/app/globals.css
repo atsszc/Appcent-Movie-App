@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.padding-128 {
+  padding: 36rem;
+}
+
+.swiper-container {
+  padding-left: 80px; 
+  padding-right: 80px;
+}
+
