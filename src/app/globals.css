@@ -11,3 +11,22 @@
   padding-right: 80px;
 }
 
+.bg-gradient-to-t {
+  width: 100%; 
+  height: 400px; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    height: auto !important;
+  }
+  .swiper-slide > div {
+    height: auto !important;
+  }
+  .bg-gradient-to-t {
+    height: 1120px;
+  }
+}
+
+

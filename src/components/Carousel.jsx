@@ -36,6 +36,12 @@ const Carousel = () => {
           '--swiper-navigation-color': '#fff',
           '--swiper-pagination-color': '#fff',
         }}
+        breakpoints={{
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+        }}
       >
         {popularMovies.map((movie, index) => (
           <SwiperSlide key={index} className="w-full h-full">
@@ -62,7 +68,7 @@ const Carousel = () => {
                     </p>
                     <p className="mb-4 text-white text-2xl">
                       <span className="font-semibold mr-1">Rating:</span>
-                      {movie.vote_average}
+                      {movie.vote_average}⭐
                     </p>
                   </div>
                 </div>
