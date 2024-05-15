@@ -1,29 +1,35 @@
-import { Inter } from 'next/font/google';
-import './globals.css';
-import Header from '@/components/Header';
-import Providers from './Providers';
-import Navbar from '@/components/Navbar';
-import SearchBox from '@/components/SearchBox';
-import Footer from '@/components/Footer';
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Header from "@/components/Header";
+import Providers from "./Providers";
+import Navbar from "@/components/Navbar";
+import SearchBox from "@/components/SearchBox";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Appcent Movie',
-  description: 'This project created for Appcent',
+  title: "Appcent Movie",
+  description: "This project created for Appcent",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
+    <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="/appcent-icon.png?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
       <body className={inter.className}>
         <Providers>
           <Header />
           <Navbar />
           <SearchBox />
-          <div className="mb-32">
-            {children}
-          </div>
+          <div className="mb-32">{children}</div>
           <Footer />
         </Providers>
       </body>
